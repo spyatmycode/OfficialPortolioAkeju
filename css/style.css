@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+.header{
+    display: flex;
+     justify-content: space-between;
+    flex-basis: 33.3%;
+    background-color: black;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    width: 100vw;
+    padding-right: 0px;
+}
+
+.header h1{
+    color: white;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    padding: 5px;
+    margin-top: 3px;
+}
+
+
+
+.fa-bars, .fa-times{
+    display: block;
+    color: white;
+    font-size: 19px;
+    padding-right: 0px;
+    padding-top: 10px;
+    cursor: pointer;
+    position: relative;
+    right: 50px;
+}
+
+
+.fa-times{
+    display: none;
+}
+
+.nav,  #nav{
+    display: none;   /*display: flex; */
+    flex-direction: column;
+    position: fixed;
+    z-index: 3;
+    width: 250px;
+    top: 70px;
+    left: 50%;
+    margin-left: -125px;
+    text-align: center;
+    background-color: black;
+    
+    
+}
+
+.nav a{
+    color:white;
+}
+.nav ul li{
+    padding: 20px;
+    cursor: pointer;
+    
+}
+
+.nav ul li:hover, .nav ul li:active{
+    background-color: darkorange;
+    width: 250px;
+    transition: 0.7s ease-in-out;
+    
+}
+
+.centeritems{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.3%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 18.75rem ;
+    margin-top: 0px;
+    margin-bottom: 0px!important;
+    padding-bottom: 300px;
+    position: relative;
+    z-index: 2;
+}
+
+.centeritems h2{
+    color: rgba(255, 255, 255, 1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-shadow: 0 0 0.1875rem dimgrey;
+}
+
+.centeritems p{
+    color: grey;
+    font-size: 20px;
+
+
+}
+
+.social-icons{
+    display:flex;
+    justify-content: space-around;
+    flex-basis: 33.3%;
+}
+
+.fab{
+    font-size: 30px;
+    color: white;
+    font: bold;
+    padding: 15px;
+}
+
+.home{
+    background-image: url('../images/background1.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fa-facebook:hover{
+    color: dodgerblue;
+}
+
+.fa-whatsapp:hover{
+    color: rgb(57, 226, 57)
+}
+
+.fa-instagram:hover{
+    color: rgb(223, 25, 58);
+}
+
+.page2{
+    background-image: url('../images/page2.jpg');
+    
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.about, .contact, .dbutton{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 15px 0px 15px;
+    padding-top: 50px; 
+    padding-bottom:50px;
+}
+    
+    .about h2, .contact h2{
+        color: darkorange;
+        text-align: center;
+         padding-bottom: 20px;
+         
+    
+   
+}
+
+.about p, .contact p{
+    text-align: justify;
+    color: white;
+    font-size: 16px;
+    margin: 0px 10px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.downloadbtn, .downloadbtn:hover{
+    background-color: darkorange;
+    width: 230px;
+    position: relative;
+    top: 0px;
+    left: 50%;
+    margin-left: -115px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 3px;
+    color:white
+    
+}
+
+.downloadbtn:hover{
+    color: black !important;
+    background-color: white !important;
+}
+
+.education, .work, .skills{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px ;
+    padding-bottom: 50px;
+}
+
+.education h3, .work h3, .skills h3{
+    width: 150px;
+    position: relative;
+    top: 0px;
+    left: 50%;
+    margin-left: -75px;
+    font-size: 25px;
+    padding: 10px;
+    border-bottom: 3px solid darkorange;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    
+    
+    
+}
+
+.education h2, .work h2{
+    /* border: none; */
+    /* width: 300px; */
+    /* position: relative;
+    top: 0;
+    left: 50%;
+    margin-left: -150px;
+    padding-top: 20px; */
+    text-align: center;
+    padding-bottom: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+    
+
+}
+
+.education p, .work p, .skills p{
+    text-align: center;
+    color: grey;
+    font: bold;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     margin-left:1rem;
+     margin-right: 1rem ; 
+}
+
+.skills h4{
+    margin-left: 1rem;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+
+
+
+.bar1{
+    display: grid !important;
+    grid-template-columns: 70% 20%;
+    grid-column-gap: none;
+    margin-left: 1rem;
+    
+}
+.bar2{
+    display: grid !important;
+    grid-template-columns: 60% 30%;
+    grid-column-gap: none;
+    margin-left: 1rem;
+    
+}
+.bar3{
+    display: grid !important;
+    grid-template-columns: 50% 40%;
+    grid-column-gap: none;
+    margin-left: 1rem;
+    
+}
+.bar4{
+    display: grid !important;
+    grid-template-columns: 50% 40%;
+    grid-column-gap: none;
+    margin-left: 1rem;
+    
+}
+.bar5{
+    display: grid !important;
+    grid-template-columns: 50% 40%;
+    grid-column-gap: none;
+    margin-left: 1rem;
+    
+}
+.bar6{
+    display: grid !important;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: none;
+    margin-left: 1rem;
+    
+}
+.bar7{
+    display: grid !important;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: none;
+    margin-left: 1rem;
+    
+}
+.bar8{
+    display: grid !important;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: none;
+    margin-left: 1rem;
+    
+}
+
+/* .bar9{
+    display: grid !important;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: none;
+    margin-left: 1rem;
+    
+}
+.bar10{
+    display: grid !important;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: none;
+    margin-left: 1rem;
+    
+}
+.bar11{
+    display: grid !important;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: none;
+    margin-left: 1rem;
+    
+}
+.bar12{
+    display: grid !important;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: none;
+    margin-left: 1rem;
+    
+} */
+
+.one,.three,.five,.seven,.nine,.eleven,.thirteen{
+    background-color: orangered;
+}
+.two,.four,.six,.eight,.ten,.twelve,.fourteen{
+    
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,.twelve,.thirteen,.fourteen{
+    padding: 16px 25px;
+    margin-bottom: 3rem;
+}
+
+
+.page4{
+    background-image: url('../images/page4.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.testimonials{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: center;
+    justify-content: center;
+
+}
+
+.testimonials h1{
+    text-align: center;
+    color: grey;
+    font-size: 30px;
+    
+    font-family: 'Times New Roman', Times, serif;
+    font: bold;
+
+}
+
+.testimonials i{
+    color: white;
+    text-align: center;
+    font-family: cursive;
+    font-size: 25px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border:  2px solid white;
+    padding: 10px;
+    
+}
+
+.testimonials small p{
+    text-shadow: 0 0 1px;
+    color: white;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    margin: 2rem;
+    font-weight: 800;
+}
+
+
+.page5{
+    background-image: url("../images/page5.jpg");
+    background-color: grey;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.chead{
+    position: relative;
+    top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 15px;
+    border: 5px dashed whitesmoke;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 100px;
+
+
+}
+
+
+input[type="text"],input[type="email"],input[type="number"],textarea, input[type="submit"]{
+
+    width: 290px;
+    position: relative;
+    left: 50%;
+    margin-left: -145px;
+    padding: 15px;
+    background-color: rgba(26, 20, 20, 0.623);
+    font-size: 25px;
+    font-style: normal;
+    color: white;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 4px solid wheat
+
+
+
+}
+
+textarea{
+    height: 200px;
+}
+
+input[type="submit"]{
+    background-color: darkorange;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+
+
+
+
+.form{
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.form label{
+    
+    margin-left: 60px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke
+}
+
+
+
+.page6{
+    /* background-image: url('../images/page6.jpg'); */
+    background-color: black;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.page6-subdiv{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+ .page6-subdiv .fab{
+    font-size: 18px;
+    padding: 3px;
+    margin: 0px;
+    padding-bottom: 10px;
+
+ } 
+
+.fa-github{
+    color: peru;
+}
+
+.fa-twitter{
+    color: dodgerblue;
+}
+
+.page6-subdiv .fa-facebook{
+    color: rgb(11, 89, 167);
+}
+
+.page6-subdiv .fa-whatsapp{
+    color: rgb(57, 226, 57);
+}
+
+.page6-subdiv .fa-instagram .page6-subdiv{
+    color: rgb(223, 25, 58);
+}
+
+.page6-subdiv h5, .page6-subdiv h6{
+    color: rgba(255, 248, 220, 0.589);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.page6-subdiv h6{
+    font-size: 12px;
+}
+
+.page6-subdiv a{
+    /* color: rgba(255, 248, 220, 0.589); */
+    color: white;
+    
+   
+}
+
+.page6-subdiv .footersocials{
+    margin-bottom: 30px ;
+}
+
+
